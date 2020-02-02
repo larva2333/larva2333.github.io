@@ -36,6 +36,36 @@
 
 
 <meta name="generator" content="Hexo 4.2.0"></head>
+<!-- bgm --->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<meting-js
+        server="netease"
+        type="song"
+        fixed="true"
+        id="5242338">
+</meting-js>
+<style type="text/css">
+  .aplayer-lrc {
+    display: none !important;
+  }
+</style>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+  .pace .pace-progress {
+    background: #199ef6; /*进度条颜色*/
+    height: 3px;
+  }
+  .pace .pace-progress-inner {
+    box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+  }
+  .pace .pace-activity {
+    border-top-color: #1E92FB;    /*上边框颜色*/
+    border-left-color: #1E92FB;    /*左边框颜色*/
+  }
+</style>
 
 
 <body>
@@ -137,25 +167,85 @@
                 
 
 <div class="list-group">
-  <p class="h4">共计 2 篇文章</p>
+  <p class="h4">共计 17 篇文章</p>
   <hr>
   
     
       
       <p class="h5">2020</p>
     
-    <a href="/2020/01/31/%E5%8D%87%E7%BA%A7%E7%AF%87/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">升级篇</span>
-      <span style="float: right;">01-31</span>
+    <a href="/2020/02/01/%E7%95%AA%E5%A4%96%E7%AF%87/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">番外篇</span>
+      <span style="float: right;">02-01</span>
     </a>
   
     
-    <a href="/2020/01/30/%E6%80%9D%E8%B7%AF%E7%AF%87/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">思路篇</span>
-      <span style="float: right;">01-30</span>
+    <a href="/2020/02/01/%E5%B7%A5%E7%A8%8B%E5%AD%A6/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">工程学</span>
+      <span style="float: right;">02-01</span>
+    </a>
+  
+    
+    <a href="/2020/02/01/%E5%A4%96%E5%9F%9F%E7%AF%87/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">外域篇</span>
+      <span style="float: right;">02-01</span>
+    </a>
+  
+    
+    <a href="/2020/02/01/%E9%A2%86%E4%B8%BB%E4%BA%89%E5%A4%BA%E6%88%98/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">领主争夺战</span>
+      <span style="float: right;">02-01</span>
+    </a>
+  
+    
+    <a href="/2020/02/01/%E7%A4%BE%E5%8C%BA%E4%BA%89%E5%A4%BA%E6%88%98/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">社区争夺战</span>
+      <span style="float: right;">02-01</span>
+    </a>
+  
+    
+    <a href="/2020/02/01/%E9%98%B5%E5%AE%B9%E7%AF%87/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">阵容篇</span>
+      <span style="float: right;">02-01</span>
+    </a>
+  
+    
+    <a href="/2020/02/01/%E5%95%86%E5%BA%97%E7%AF%87/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">商店篇</span>
+      <span style="float: right;">02-01</span>
+    </a>
+  
+    
+    <a href="/2020/02/01/%E5%AE%A0%E7%89%A9%E7%AF%87/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">宠物篇</span>
+      <span style="float: right;">02-01</span>
+    </a>
+  
+    
+    <a href="/2020/02/01/%E5%AE%B6%E5%9B%AD%E7%AF%87/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">家园篇</span>
+      <span style="float: right;">02-01</span>
+    </a>
+  
+    
+    <a href="/2020/02/01/%E6%8A%80%E8%83%BD%E7%AF%87/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">技能篇</span>
+      <span style="float: right;">02-01</span>
     </a>
   
 </div>
+
+  <nav aria-label="index posts navigation">
+    <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/page/2/">2</a><a class="extend next" rel="next" href="/archives/2020/page/2/"><i class="fas fa-angle-double-right"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByClassName("page-number")) {
+      ele.href += '#board';
+    }
+  </script>
 
 
               </div>
@@ -198,9 +288,10 @@
 
   <footer class="mt-5">
   <div class="text-center py-3">
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <b>©2020</b>
+    <a href="https://larva2333.github.io/" target="_self" rel="nofollow noopener"> <b>艾泽拉斯</b></a>
+    <span>丨</span>
+    <a href="http://bbs.locojoy.com/" target="_blank" rel="nofollow noopener"><b>我叫mtOnline</b></a>
     <br>
 
     
@@ -236,8 +327,6 @@
 <script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
 <script src="/js/main.js" ></script>
 
-
-  <script src="/js/lazyload.js" ></script>
 
 
 
