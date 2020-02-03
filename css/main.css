@@ -512,11 +512,14 @@ h6::before {
   font-size: 15px;
 }
 .tocbot-link {
-  color: #3c4858;
+  color: #f5deb3;
+}
+.tocbot-link:hover {
+  color: #f5ece4;
 }
 .tocbot-active-link {
   font-weight: 600;
-  color: #1abc9c;
+  color: #f9f4e2;
 }
 .tocbot-is-collapsible {
   max-height: 1000px;
