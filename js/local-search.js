@@ -22,7 +22,6 @@ var searchFunc = function (path, search_id, content_id) {
   // 0x00. environment initialization
   'use strict';
   var $input = document.getElementById(search_id);
-  debugger;
   var $resultContent = document.getElementById(content_id);
   $resultContent.innerHTML = "<div class='m-auto text-center'><div class='spinner-border' role='status'><span class='sr-only'>Loading...</span></div><br/>Loading...</div>";
   $.ajax({
