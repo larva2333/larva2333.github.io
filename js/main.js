@@ -30,6 +30,18 @@ $(document).ready(function () {
     $('#navbar').toggleClass('navbar-col-show');
   });
 
+  //bgm
+  $('#navbar .bgm').on('click', function () {
+    if($(this).hasClass('playing')) {
+      $(this).removeClass('playing');
+      $('audio')[0].pause();
+    } else {
+      $(this).addClass('playing');
+      $('audio')[0].play();
+    }
+
+  });
+
   // 向下滚动箭头的点击
   $(".scroll-down-bar").on("click", scrollToBoard);
 
